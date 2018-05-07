@@ -1,0 +1,237 @@
+/* *** RESET CSS NAVIGATEUR *** */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+/* *** CLASS D'ICONES *** */
+
+/* SOCIAL */
+.social-logo-top i {
+    font-size: 65px;
+}
+
+    .fa-facebook-square {
+        color: #3b5999;
+    }
+
+    .fa-twitter-square {
+        color: #00acef;
+    }
+
+    .fa-instagram {
+        color: #c328a5;
+    }
+    
+    .fa-linkedin-in {
+        color: #007bb6;
+    }
+
+/* CONTACT */
+.fa-envelope {
+    color: #ee1d24;
+}
+
+.fa-phone {
+    color: #1bc300;
+}
+
+/* SECTIONS */
+section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+}
+
+    section:nth-child(even) {
+        background: #e5e6e7;
+    }
+
+    section:nth-child(odd) {
+        background: #ebebec;
+    }
+
+    section .title-section {
+        color: #e5e6e7;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        letter-spacing: 1.5px;
+        padding: 30px 0px;
+    }
+
+    section:nth-child(even) > .title-section {
+        background: #581fce;
+        border-bottom: 10px solid #4560df;
+        justify-content: flex-end;
+    }
+
+    section:nth-child(odd) > .title-section {
+        background: #1299c5;
+        border-bottom: 10px solid #58c3e6;
+        justify-content: flex-start;
+    }
+
+    section:last-child > .title-section {
+        background: #ed6701;
+        border-bottom: 10px solid #f19b40;
+    }
+
+
+h2 {
+    font-weight: 500;
+    padding: 0px 30px;
+}
+
+.bloc-logo-txt {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 30px 30px;
+    text-align: center;
+}
+
+    .bloc-logo-txt i {
+        color: #39a947;
+        font-size: 90px;
+        padding: 15px 0px;
+    }
+
+
+/* MISC */
+.arrow-bot i {
+    color: #525252;
+    display: flex;
+    font-size: 75px;
+    justify-content: center;
+    padding: 10px;
+}
+
+header .arrow-bot i {
+    color: #ccc;
+}
+
+.txt-color-blue {
+    color: #aab8f7;
+}
+
+
+/* *** PROPRIETES GENERALES *** */
+
+body {
+    color: #525252;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    min-height: 100vh;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.35);
+}
+
+/** HEADER **/
+    header {
+        background: #355c7d;
+        color: #ccc;
+        -webkit-linear-gradient(-50deg, #355c7d, #6c5b7b, #c06c84); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(-50deg, #355c7d, #6c5b7b, #c06c84); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        display: flex;
+        flex-direction: column;
+        flex-grow: 0;
+        padding: 15px;
+    }
+
+    /* LOGO */
+    .logo-top {
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    /* TITRE */
+    .title {
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 4px;
+        padding: 5%;
+    }
+
+        .title h1 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        .title p {
+            color: #aab8f7;
+            font-size: 24px;
+            letter-spacing: 2.5px;
+        }
+    
+    /* SUMMARY */
+    .summary {
+        align-items: center;
+        display: flex;
+        flex-grow: 1;
+        padding: 10px;
+    }
+
+    /* RESEAUX SOCIAUX */
+    .social-logo-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+
+/** COMPETENCES **/
+    .logo-competences {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        font-size: 75px;
+        justify-content: space-around;
+        padding: 45px 30px;
+    }
+
+        .logo-competences i {
+            flex: 1 0 33.333333%;
+            text-align: center;
+            padding: 15px 5px;
+        }
+
+    .text-competences {
+        padding: 30px;
+    }
+
+
+/** CONTACT **/
+    .contact-text {
+        padding: 30px;
+    }
+
+    .contact-logo {
+        display: flex;
+        font-size: 110px;
+        flex-direction: row;
+        flex: 1 0 50%;
+        text-align: center;
+        justify-content: space-around;
+        padding: 75px 30px;
+    }
