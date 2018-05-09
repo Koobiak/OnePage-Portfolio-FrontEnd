@@ -1,4 +1,6 @@
+/********************************/
 /* *** RESET CSS NAVIGATEUR *** */
+/********************************/
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -17,10 +19,12 @@ ul {
 img {
     display: block;
 }
-
+/**************************/
 /* *** CLASS D'ICONES *** */
+/**************************/
 
 /* SOCIAL */
+.social-logo i,
 .social-logo-top i {
     font-size: 65px;
 }
@@ -91,7 +95,9 @@ section {
         border-bottom: 10px solid #f19b40;
     }
 
+    
 
+/* MISC */
 h2 {
     font-weight: 500;
     padding: 0px 30px;
@@ -111,8 +117,6 @@ h2 {
         padding: 15px 0px;
     }
 
-
-/* MISC */
 .arrow-bot i {
     color: #525252;
     display: flex;
@@ -129,8 +133,9 @@ header .arrow-bot i {
     color: #aab8f7;
 }
 
-
-/* *** PROPRIETES GENERALES *** */
+/*****************************************/
+/* *** PROPRIETES GENERALES (mobile) *** */
+/*****************************************/
 
 body {
     color: #525252;
@@ -147,14 +152,9 @@ body {
 
 /** HEADER **/
     header {
-        background: #355c7d;
+        background: linear-gradient(-50deg, #355c7d, #6c5b7b, #c06c84); 
         color: #ccc;
-        -webkit-linear-gradient(-50deg, #355c7d, #6c5b7b, #c06c84); /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(-50deg, #355c7d, #6c5b7b, #c06c84); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        display: flex;
-        flex-direction: column;
-        flex-grow: 0;
-        padding: 15px;
+        padding: 15px
     }
 
     /* LOGO */
@@ -163,6 +163,10 @@ body {
         justify-content: center;
         padding: 15px;
     }
+
+        .logo-top nav {
+            display: none;
+        }
 
     /* TITRE */
     .title {
@@ -191,6 +195,7 @@ body {
     }
 
     /* RESEAUX SOCIAUX */
+    .social-logo,
     .social-logo-top {
         display: flex;
         flex-direction: row;
@@ -235,3 +240,184 @@ body {
         justify-content: space-around;
         padding: 75px 30px;
     }
+
+/** FOOTER **/
+    footer {
+        display: none;
+    }
+
+
+/**********************/
+/* *** RESPONSIVE *** */
+/**********************/
+
+/* DEKSTOP */
+@media screen and (min-width: 992px) {
+
+    body {
+        background: #d5d5d5;
+    }
+
+    .wrapper {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0px;
+        width: 960px;
+
+    }
+
+    header {
+        background: url(../img/bg_header.png), linear-gradient(-50deg, #355c7d, #6c5b7b, #c06c84); 
+        background-repeat: no-repeat;
+        color: #ccc;
+        padding: 15px
+    }
+
+    .arrow-bot {
+        display: none;
+    }
+
+    .social-logo-top {
+        justify-content: flex-end;
+        padding: 45px 10px 10px 10px;
+    }
+
+
+        .social-logo-top i {
+            font-size: 45px;
+            padding: 0px 12px;
+        }
+
+    .social-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 200px;
+    }
+
+        
+    .logo-top {
+        justify-content: space-between;
+    }
+
+        .logo-top nav {
+            display: flex;
+            padding: 10px 5px;
+        }
+
+            .logo-top a {
+                color: #ccc;
+                border-bottom: 0 solid #007bb6;
+                font-weight: 700;
+                padding: 5px 15px 10px 15px;
+                text-transform: uppercase;
+                transition: all .3s;
+            }
+
+
+                .logo-top a:hover {
+                    border-bottom: 5px solid #007bb6;
+                    color: #333;
+                    padding: 5px 15px 5px 15px;
+                }
+    
+    section .title-section {
+        color: #333;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        letter-spacing: 1.5px;
+        padding: 30px 0px 0px 0px;
+    }
+
+    section:nth-child(even) > .title-section {
+        background: transparent;
+        border-bottom: 0px solid #4560df;
+    }
+
+    section:nth-child(odd) > .title-section {
+        background: transparent;
+        border-bottom: 0px solid #58c3e6;
+    }
+
+    section:last-child > .title-section {
+        background: transparent;
+        border-bottom: 0px solid #f19b40;
+    }
+            
+
+
+    .title {
+        padding: 25px 110px;
+    }
+
+        .title h1 {
+            font-size: 75px;
+        }
+
+        .title p {
+            font-size: 37.5px;
+            letter-spacing: 3px;
+        }
+
+    .summary {
+        align-items: center;
+        display: flex;
+        flex-grow: 1;
+        padding: 0 15px;
+    }
+
+    .logo-competences i {
+        flex: 1 0 16.666666%;
+        text-align: center;
+        padding: 15px 5px;
+    }
+
+    .bloc-logo-txt i {
+        font-size: 60px;
+    }
+
+
+
+    #qualities {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 0;
+    }
+
+    #hobbies {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-grow: 0;
+    }
+
+    .social-logo,
+    .social-logo-top {
+        transition: all .5s;
+    }
+
+        .social-logo a:hover {
+            text-shadow: 0px 2px 0px rgb(27, 27, 27);
+        }
+        
+        .social-logo-top a:hover {
+            text-shadow: 0px 2px 0px rgb(187, 187, 187);
+        }
+
+    .contact-logo {
+        padding: 55px 150px;
+    }
+    
+
+    footer {
+        background: #333;
+        color: #ccc;
+        display: flex;
+        justify-content: center;
+        padding: 31px 5px;
+    }
+
+        footer a {
+            color: #00acef;
+        }
+}

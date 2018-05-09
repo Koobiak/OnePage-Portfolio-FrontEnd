@@ -1,4 +1,6 @@
-Created by André LECLERCQ (FRANCE).
+/******************************************/
+/*** Created by André LECLERCQ (FRANCE) ***/
+/******************************************/
 
 Languages : HTML5 / CSS3
 
@@ -11,6 +13,11 @@ Key Words : Minimalist & Light
 
 
 Sources : 
+
+Workspace picture (header) by Nick Morrison from Unsplash => https://unsplash.com/@nickmorrison
+
+Vectorial Logo Redbear by André 'RedbeaR' LECLERCQ (with Illustrator).
+
 Classics Fonts => https://fonts.google.com/?selection.family=Montserrat:400,700|Roboto:400,700&query=monts
 
 
@@ -19,7 +26,15 @@ Icons Fonts => https://fontawesome.com/ // http://konpa.github.io/devicon/
 Gradient Generator => https://uigradients.com/#RedSunset
 
 
-UPDATES :
+:: UPDATES ::
 
-05 / 07 / 2018 - First version for the Mobile.
+- 05 / 09 / 2018 - Add Dekstop version.
+- 05 / 07 / 2018 - First version for the Mobile.
+
+
+:: TODO ::
+- Finish the dekstop version.
+- Adjust colors.
+- Add portfolio (pinterest style).
+- Optimize the project.
 
