@@ -112,7 +112,7 @@ h2 {
 }
 
     .bloc-logo-txt i {
-        color: #39a947;
+        color: #355c7d;
         font-size: 90px;
         padding: 15px 0px;
     }
@@ -133,12 +133,38 @@ header .arrow-bot i {
     color: #aab8f7;
 }
 
+#home {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    z-index: 5;
+}
+
+#competences {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    z-index: 4;
+}
+
+#qualities {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    z-index: 3;
+}
+
+#hobbies {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+#contact {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+
+
 /*****************************************/
 /* *** PROPRIETES GENERALES (mobile) *** */
 /*****************************************/
 
 body {
-    color: #525252;
+    color: #6c5b7b;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -147,7 +173,7 @@ body {
     letter-spacing: 1.5px;
     min-height: 100vh;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.35);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.35);
+    
 }
 
 /** HEADER **/
@@ -255,7 +281,7 @@ body {
 @media screen and (min-width: 992px) {
 
     body {
-        background: #d5d5d5;
+        background: linear-gradient(-50deg, #355c7d, #6c5b7b, #c06c84);
     }
 
     .wrapper {
@@ -269,6 +295,7 @@ body {
     header {
         background: url(../img/bg_header.png), linear-gradient(-50deg, #355c7d, #6c5b7b, #c06c84); 
         background-repeat: no-repeat;
+        background-position: center center;
         color: #ccc;
         padding: 15px
     }
@@ -307,43 +334,54 @@ body {
 
             .logo-top a {
                 color: #ccc;
-                border-bottom: 0 solid #007bb6;
+                border-bottom: 0 solid #6c5b7b;
                 font-weight: 700;
                 padding: 5px 15px 10px 15px;
                 text-transform: uppercase;
-                transition: all .3s;
+                transition: all .15s;
             }
 
 
                 .logo-top a:hover {
-                    border-bottom: 5px solid #007bb6;
-                    color: #333;
+                    border-bottom: 5px solid #6c5b7b;
+                    color: #6c5b7b;
                     padding: 5px 15px 5px 15px;
                 }
+   
     
-    section .title-section {
-        color: #333;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        letter-spacing: 1.5px;
-        padding: 30px 0px 0px 0px;
-    }
+        section .title-section {
+            color: #355c7d;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            letter-spacing: 1.5px;
+            padding: 30px 0px 50px 0px;
+        }
 
-    section:nth-child(even) > .title-section {
-        background: transparent;
-        border-bottom: 0px solid #4560df;
-    }
+        section:nth-child(even) > .title-section {
+            background: transparent;
+            border-bottom: 0px solid #4560df;
+            justify-content: flex-start;
+        }
 
-    section:nth-child(odd) > .title-section {
-        background: transparent;
-        border-bottom: 0px solid #58c3e6;
-    }
+        section:nth-child(odd) > .title-section {
+            background: transparent;
+            border-bottom: 0px solid #58c3e6;
+            justify-content: flex-end;
+        }
 
-    section:last-child > .title-section {
-        background: transparent;
-        border-bottom: 0px solid #f19b40;
-    }
+        section:last-child > .title-section {
+            background: transparent;
+            border-bottom: 0px solid #f19b40;
+            justify-content: flex-start;
+        }
+
+        .content-section {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 0;
+            padding: 0px 25px 100px 25px;
+        } 
             
 
 
@@ -377,17 +415,19 @@ body {
         font-size: 60px;
     }
 
-
+    #competences {
+        padding: 20px 15px;
+    }
 
     #qualities {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-grow: 0;
     }
 
     #hobbies {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: column;
         flex-grow: 0;
     }
 
