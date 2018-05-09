@@ -413,6 +413,7 @@ body {
         background: #333;
         color: #ccc;
         display: flex;
+        font-size: 15px;
         justify-content: center;
         padding: 31px 5px;
     }
