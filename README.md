@@ -27,13 +27,12 @@ Gradient Generator => https://uigradients.com/#RedSunset
 
 :: UPDATES ::
 
-- 05 / 09 / 2018 - Add Dekstop version.
+- 05 / 09 / 2018 - Add Dekstop version | Adjust Color | Color switch | Optimise Pictures Wieght.
 - 05 / 07 / 2018 - First version for the Mobile.
 
 
 :: TODO ::
 - Finish the dekstop version.
-- Adjust colors.
 - Add portfolio (pinterest style).
 - Optimize the project.
 

@@ -1,6 +1,7 @@
 /********************************/
 /* *** RESET CSS NAVIGATEUR *** */
 /********************************/
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -69,6 +70,9 @@ section {
         background: #ebebec;
     }
 
+    
+
+
     section .title-section {
         color: #e5e6e7;
         display: flex;
@@ -77,6 +81,8 @@ section {
         letter-spacing: 1.5px;
         padding: 30px 0px;
     }
+
+        
 
     section:nth-child(even) > .title-section {
         background: #581fce;
@@ -163,7 +169,12 @@ header .arrow-bot i {
 /* *** PROPRIETES GENERALES (mobile) *** */
 /*****************************************/
 
-body {
+#switch {
+    display: none;
+}
+
+
+#global {
     color: #6c5b7b;
     display: flex;
     flex-direction: column;
@@ -280,7 +291,7 @@ body {
 /* DEKSTOP */
 @media screen and (min-width: 992px) {
 
-    body {
+    #global {
         background: linear-gradient(-50deg, #355c7d, #6c5b7b, #c06c84);
     }
 
@@ -292,6 +303,17 @@ body {
 
     }
 
+    .fa-lightbulb {
+        color: #16222a;
+        cursor: pointer;
+        font-size: 35px;
+        padding: 0px 15px;
+    }
+
+        :checked +* .fa-lightbulb {
+            color: #ccc;
+        }
+
     header {
         background: url(../img/bg_header.png), linear-gradient(-50deg, #355c7d, #6c5b7b, #c06c84); 
         background-repeat: no-repeat;
@@ -299,6 +321,14 @@ body {
         color: #ccc;
         padding: 15px
     }
+
+        :checked +* header {
+            background: url(../img/bg_header2.png), linear-gradient(-50deg, #16222a, #3a6073); 
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            color: #ccc;
+            padding: 15px
+        }
 
     .arrow-bot {
         display: none;
@@ -335,17 +365,28 @@ body {
             .logo-top a {
                 color: #ccc;
                 border-bottom: 0 solid #6c5b7b;
-                font-weight: 700;
+                font-weight: 500;
                 padding: 5px 15px 10px 15px;
                 text-transform: uppercase;
                 transition: all .15s;
             }
 
+                :checked+* .logo-top a {
+                    color:#88c9e9;
+                }
+
 
                 .logo-top a:hover {
+                    background: #ccc;
                     border-bottom: 5px solid #6c5b7b;
+                    border-radius: 10px;
                     color: #6c5b7b;
                     padding: 5px 15px 5px 15px;
+                }
+
+                :checked+* .logo-top a:hover {
+                    border-bottom: 5px solid #16222a;
+                    color: #16222a;
                 }
    
     
@@ -382,7 +423,6 @@ body {
             flex-grow: 0;
             padding: 0px 25px 100px 25px;
         } 
-            
 
 
     .title {
@@ -411,7 +451,9 @@ body {
         padding: 15px 5px;
     }
 
+
     .bloc-logo-txt i {
+        color: #6c5b7b;
         font-size: 60px;
     }
 
@@ -436,6 +478,10 @@ body {
         transition: all .5s;
     }
 
+    .social-logo-top i {
+        color: #c06c84;
+    }
+
         .social-logo a:hover {
             text-shadow: 0px 2px 0px rgb(27, 27, 27);
         }
@@ -450,7 +496,7 @@ body {
     
 
     footer {
-        background: #333;
+        background: #6c5b7b;
         color: #ccc;
         display: flex;
         font-size: 15px;
@@ -458,7 +504,47 @@ body {
         padding: 31px 5px;
     }
 
+
         footer a {
             color: #00acef;
         }
+
+    /* CHECKED */
+    :checked +* section:nth-child(even) {
+        background: #263238;
+    }
+
+    :checked +* section:nth-child(odd) {
+        background: #1f292e;
+    }
+
+    :checked +* section .title-section {
+        color: #aab8f7;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        letter-spacing: 1.5px;
+        padding: 30px 0px;
+    }
+
+    :checked + #global {
+        background: linear-gradient(-50deg, #16222a, #3a6073); 
+        color: #ccc;
+    }
+    
+    :checked +* .logo-competences i {
+        color: #88c9e9;
+    }
+
+    :checked~* .bloc-logo-txt i {
+        color: #88c9e9;
+    }
+
+    :checked +* .social-logo-top i {
+        color: #88c9e9;
+    }
+
+    :checked +* footer {
+        background: #16222a;
+    }
 }
