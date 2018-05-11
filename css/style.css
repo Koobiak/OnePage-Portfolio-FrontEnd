@@ -4,26 +4,26 @@
 
 :root {
     /* COULEUR THEME LIGHT */
-    --light-gradient-01: #cefffd;
+    --light-gradient-01: #67b26f;
     --light-gradient-02: #e0def0;
-    --light-gradient-03: #f5bce4;
-    --light-text: #776DC8;
-    --light-title: #7B7994;
-    --light-icon: #837CB9;
-    --light-social: #837CB9;
-    --light-bg-section-01: #EBE9FA;
-    --light-bg-section-02: #dddaf5;
+    --light-gradient-03: #4ca2cd;
+    --light-text: #373d4a;
+    --light-title: #222222;
+    --light-icon: #858fa4;
+    --light-social: #3277b3;
+    --light-bg-section-01: #dde4e7;
+    --light-bg-section-02: #eceff1;
     
     /* COULEUR THEME DARK */
-    --dark-gradient-01: #3d70c3;
-    --dark-gradient-02: #325696;
-    --dark-gradient-03: #1e3158;
-    --dark-text: #A3B4D4;
-    --dark-title: #8d9fc0;
-    --dark-icon: #4C6AA0;
-    --dark-social: #476EB4;
-    --dark-bg-section-01: #364155;
-    --dark-bg-section-02: #313b4d;
+    --dark-gradient-01: #3a6073;
+    --dark-gradient-02: #37474f;
+    --dark-gradient-03: #16222a;
+    --dark-text: #d3d3d3;
+    --dark-title: #fbf9f9;
+    --dark-icon: #858fa4;
+    --dark-social: #3277b3;
+    --dark-bg-section-01: #222222;
+    --dark-bg-section-02: #37474f;
 
 }
 
@@ -161,7 +161,7 @@ header .arrow-bot i {
 }
 
 .txt-color-blue {
-    color: #aab8f7;
+    color: var(--light-social);
 }
 
 #home {
@@ -317,7 +317,7 @@ header .arrow-bot i {
 @media screen and (min-width: 992px) {
 
     #global {
-        background: linear-gradient(-50deg, var(--light-gradient-01), var(--light-gradient-02), var(--light-gradient-03));
+        background: var(--light-bg-section-01);
     }
 
     .wrapper {
@@ -380,7 +380,7 @@ header .arrow-bot i {
 
             .logo-top a {
                 color: var(--light-title);
-                border-bottom: 0 solid var(--light-gradient-03);
+                border-bottom: 0 solid var(--light-social);
                 font-weight: 500;
                 padding: 5px 15px 10px 15px;
                 text-transform: uppercase;
@@ -389,8 +389,8 @@ header .arrow-bot i {
 
 
                 .logo-top a:hover {
-                    background: var(--light-gradient-02);
-                    border-bottom: 5px solid var(--light-gradient-03);
+                    background: var(--light-bg-section-01);
+                    border-bottom: 5px solid var(--light-social);
                     border-radius: 10px;
                     color: var(--light-text);
                     padding: 5px 15px 5px 15px;
@@ -442,6 +442,7 @@ header .arrow-bot i {
         }
 
         .title p {
+            color: var(--light-social);
             font-size: 37.5px;
             letter-spacing: 3px;
         }
@@ -454,6 +455,7 @@ header .arrow-bot i {
     }
 
     .logo-competences i {
+        color: var(--light-icon);
         flex: 1 0 16.666666%;
         text-align: center;
         padding: 15px 5px;
@@ -531,10 +533,12 @@ header .arrow-bot i {
     }
 
     :checked +* .logo-top a {
+        border-bottom: 0px solid var(--dark-gradient-03);
         color:var(--dark-text);
     }
 
     :checked +* .logo-top a:hover {
+        background: var(--dark-bg-section-02);
         border-bottom: 5px solid var(--dark-gradient-03);
         color: var(--dark-text);
     }
@@ -560,8 +564,16 @@ header .arrow-bot i {
         padding: 30px 0px;
     }
 
+        :checked +* section:nth-child(even) .title-section {
+            justify-content: flex-start;
+        }
+
+        :checked +* section:nth-child(odd) .title-section {
+            justify-content: flex-end;
+        }
+
     :checked + #global {
-        background: linear-gradient(-50deg, var(--dark-gradient-01), var(--dark-gradient-02), var(--dark-gradient-03)); 
+        background: var(--dark-gradient-02); 
         color: var(--dark-text);
     }
     

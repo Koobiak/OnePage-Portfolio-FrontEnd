@@ -27,7 +27,8 @@ Gradient Generator => https://uigradients.com/#RedSunset
 
 :: UPDATES ::
 
-- 05 / 09 / 2018 - Add Dekstop version | Adjust Color | Color switch | Optimise Pictures Wieght.
+- 05 / 11 /2018  - Apply new color for the dark/light theme | fix little bugs
+- 05 / 09 / 2018 - Add Dekstop version | Adjust Color | Color switch | Optimise Pictures Weight.
 - 05 / 07 / 2018 - First version for the Mobile.
 
 
